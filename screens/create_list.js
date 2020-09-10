@@ -42,8 +42,8 @@ export default function CreateListScreen() {
       onChangeText={title => this.setState({ title })}
       /> */}
       <FlatList
-        data={items}
-        renderItem={({ items }) => (
+        data={this.state.items}
+        renderItem={({ item }) => (
           <View
             style={styles.createList}>
             <View>
