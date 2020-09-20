@@ -10,6 +10,7 @@ import * as Contacts from 'expo-contacts';
 import ShoppingListsScreen from './screens/shopping_lists';
 import DetailsScreen from './screens/details';
 import CreateListScreen from './screens/create_list';
+import ImageIdent from './screens/camera';
 
 const Stack = createStackNavigator();
 
@@ -20,6 +21,7 @@ export default function App() {
         <Stack.Screen name="Shopping Lists" component={ShoppingListsScreen} />
         <Stack.Screen name="Create List" component={CreateListScreen} />
         <Stack.Screen name="Details" component={DetailsScreen} />
+        <Stack.Screen name="Camera" component={ImageIdent} />
       </Stack.Navigator>
     </NavigationContainer>
   );
